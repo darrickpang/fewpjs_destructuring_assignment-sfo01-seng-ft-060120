@@ -1,7 +1,27 @@
+// Strings
 const farmAnimals = 'cow horse sheep pig chicken'
+// 1. Use destructuring to assign appropriate variables based on the sounds animals make.
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ')
 
+// 2. Bolt the horse wandered off, so just give us four animals, and let's name them Bessie, Dolly, Babe, and Little.
+const [Bessie, Dolly, Babe, Little] = ['cow', 'sheep', 'pig', 'chicken']
+
+// 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of black_and_white, black, and pink.
+const [black_and_white, black, pink] = ['cow', 'sheep', 'pig']
+
+// Arrays
+// 4. Use destructuring to assign appropriate variables using the color names.
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+const [red, orange, yellow, green, blue, indigo, violet] = colors
 
+// 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
+const [r, o, y, g, b, v] = ['red', 'orange', 'yellow', 'green', 'blue', 'violet']
+
+// 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg.
+const [indg] = ["indigo"]
+
+// Objects
+// 7. Use destructuring to assign all appropriate variables using the keys as the variable names
 const muppet = {
   name: 'Kermit',
   color: 'green',
@@ -9,7 +29,9 @@ const muppet = {
   job: 'Host of The Muppet Show',
   partner: 'Miss Piggy'
 };
+const [name, color, song, job, partner] = [muppet.name, muppet.color, muppet.song, muppet.job, muppet.partner]
 
+// 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
 const k_muppet = {
   k_name: 'Kermit',
   k_color: 'green',
@@ -24,26 +46,4 @@ const k_muppet = {
   k_job: 'Host of The Muppet Show',
   k_partner: 'Miss Piggy'
 };
-
-// Strings
-
-// 1. Use destructuring to assign appropriate variables based on the sounds animals make.
-
-// 2. Bolt the horse wandered off, so just give us four animals, and let's name them Bessie, Dolly, Babe, and Little.
-
-// 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of black_and_white, black, and pink.
-
-// Arrays
-
-// 4. Use destructuring to assign appropriate variables using the color names.
-
-// 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
-
-// 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg. 
-
-// Objects
-
-// 7. Use destructuring to assign all appropriate variables using the keys as the variable names
-
-
-// 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+const [song_2, song_4, k_job, k_partner] = [k_muppet.k_album.the_muppet_movie.song_2, k_muppet.k_album.the_muppet_movie.song_4, k_muppet.k_job, k_muppet.k_partner]
